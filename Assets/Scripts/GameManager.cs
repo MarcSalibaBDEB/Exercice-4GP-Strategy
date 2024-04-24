@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     private void CreerRessources()
     {
         Ressources = new Ressource[nbRessources];
-        // Cr?e les ressources au d?but du jeu
+        // Crée les ressources au début du jeu
         for (int i = 0; i < nbRessources; i++)
         {
             float x = Random.value * 50 - 25;
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
         Destroy(Ressources[numeroRessourceChoisie].gameObject);
 
         // D?place le dernier objet dans cette case pour toujours
-        // garder un tableau allant de 0 ? NbRessourcesDisponibles
+        // garder un tableau allant de 0 à NbRessourcesDisponibles
         //
         //  A B C D X Y Z  --> d?truire D
         //  A B C Z X Y null
